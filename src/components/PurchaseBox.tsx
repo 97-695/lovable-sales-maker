@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { MapPin, Check } from "lucide-react";
+import { Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   Select,
@@ -39,20 +39,6 @@ const PurchaseBox = () => {
         <div className="flex items-center gap-1 text-primary text-sm font-medium">
           <Check className="h-4 w-4" />
           <span>prime</span>
-        </div>
-      </div>
-
-      <div className="space-y-2 text-sm">
-        <p>
-          <span className="font-medium">Entrega GRÁTIS:</span>{" "}
-          <span className="font-bold">Domingo, 16 de Novembro</span>
-        </p>
-        <p className="text-muted-foreground">
-          Se pedir dentro de <span className="text-success font-medium">23 hrs 52 mins</span>
-        </p>
-        <div className="flex items-center gap-2 text-primary hover:text-primary/80 cursor-pointer">
-          <MapPin className="h-4 w-4" />
-          <span>Enviar para Laura - São Paulo 05367020</span>
         </div>
       </div>
 
