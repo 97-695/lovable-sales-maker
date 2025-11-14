@@ -1,31 +1,19 @@
-import { useState } from "react";
 import { Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
 import { useToast } from "@/hooks/use-toast";
 
 const PurchaseBox = () => {
-  const [quantity, setQuantity] = useState("1");
   const { toast } = useToast();
 
   const handleAddToCart = () => {
     toast({
       title: "Produto adicionado ao carrinho",
-      description: `${quantity} unidade(s) adicionada(s)`,
+      description: "1 unidade adicionada",
     });
   };
 
   const handleBuyNow = () => {
-    toast({
-      title: "Redirecionando para checkout",
-      description: "Processando sua compra...",
-    });
+    window.location.href = "https://compraseguraonline.org.ua/c/e4eff989e4";
   };
 
   return (
@@ -33,8 +21,8 @@ const PurchaseBox = () => {
       <div className="space-y-1">
         <div className="flex items-baseline gap-1">
           <span className="text-xs">R$</span>
-          <span className="text-3xl font-normal">229</span>
-          <span className="text-base align-super">99</span>
+          <span className="text-3xl font-normal">79</span>
+          <span className="text-base align-super">90</span>
         </div>
         <div className="flex items-center gap-1 text-primary text-sm font-medium">
           <Check className="h-4 w-4" />
@@ -44,22 +32,6 @@ const PurchaseBox = () => {
 
       <div className="space-y-3">
         <p className="text-success font-medium text-lg">Em estoque</p>
-        
-        <div className="space-y-2">
-          <label className="text-sm font-medium">Quantidade:</label>
-          <Select value={quantity} onValueChange={setQuantity}>
-            <SelectTrigger className="w-full">
-              <SelectValue />
-            </SelectTrigger>
-            <SelectContent>
-              {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((num) => (
-                <SelectItem key={num} value={String(num)}>
-                  {num}
-                </SelectItem>
-              ))}
-            </SelectContent>
-          </Select>
-        </div>
 
         <div className="space-y-2">
           <Button 
