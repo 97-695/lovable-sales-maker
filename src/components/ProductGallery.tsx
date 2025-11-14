@@ -1,9 +1,12 @@
 import { useState } from "react";
-import productImage from "@/assets/christmas-tree.jpg";
+import treeDecorated from "@/assets/tree-decorated.png";
+import treeSpecs from "@/assets/tree-specs.png";
+import treeSimple from "@/assets/tree-simple.png";
+import treePremium from "@/assets/tree-premium.png";
 
 const ProductGallery = () => {
   const [selectedImage, setSelectedImage] = useState(0);
-  const images = [productImage, productImage, productImage, productImage];
+  const images = [treeDecorated, treeSpecs, treeSimple, treePremium];
 
   return (
     <div className="flex flex-col gap-4">
