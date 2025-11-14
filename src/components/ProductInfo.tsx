@@ -6,7 +6,7 @@ const ProductInfo = () => {
     <div className="space-y-4">
       <div className="flex items-start justify-between gap-4">
         <h1 className="text-2xl font-normal">
-          Árvore de Natal Luxo Pinheiro 2,10m 1000 Galhos — Cheia, Realista e Elegante Natal Encantador Decoração de Casa Decoração Natalina Inesquecível Base de Ferro Reforçada Resistente Linha Super Premium®
+          Árvore de Natal Luxo Pinheiro 1,60M 460 galhos — Cheia, Realista e Elegante Natal Encantador Decoração de Casa Decoração Natalina Inesquecível Base de Ferro Reforçada Resistente Linha Super Premium®
         </h1>
         <button className="flex-shrink-0 p-2 hover:bg-accent rounded-full transition-colors">
           <Share2 className="h-5 w-5" />
