@@ -1,12 +1,30 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import PromoBanner from "@/components/PromoBanner";
+import Breadcrumb from "@/components/Breadcrumb";
+import ProductGallery from "@/components/ProductGallery";
+import ProductInfo from "@/components/ProductInfo";
+import PurchaseBox from "@/components/PurchaseBox";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen bg-background">
+      <PromoBanner />
+      <Breadcrumb />
+      
+      <main className="container mx-auto px-4 py-6">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
+          <div className="lg:col-span-4">
+            <ProductGallery />
+          </div>
+          
+          <div className="lg:col-span-5">
+            <ProductInfo />
+          </div>
+          
+          <div className="lg:col-span-3">
+            <PurchaseBox />
+          </div>
+        </div>
+      </main>
     </div>
   );
 };
